@@ -1,0 +1,173 @@
+body {
+  width: 90%;
+  font-family: Helvetica, Arial, sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  min-height: 80px;
+  margin-top: 20px;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  margin-top: 15px;
+}
+
+.name {
+  font-size: 2em;
+  font-weight: normal;
+  -webkit-margin-before: 0.1em;
+  -webkit-margin-after: 0.1em;
+}
+
+a.profile-link {
+  color: #2d3c49;
+}
+
+.title {
+  text-align: right;
+  -webkit-margin-before: 0.7em;
+  -webkit-margin-after: 0.1em;
+}
+
+hr {
+  border-color: #7d97ad;
+}
+
+.first-image {
+  width: 100%;
+}
+
+.works {
+  color: #7d97ad;
+  font-size: 1.3em;
+  -webkit-margin-after: 0.5em;
+  text-indent: 0.5em;
+}
+
+.gallery {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product {
+  width: 280px;
+}
+
+.product-image {
+  height: 180px;
+}
+
+.product-descriptions {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+a.project-link {
+  font-size: 0.9em;
+}
+
+.details {
+  font-size: 11px;
+  text-transform: none;
+}
+
+@media screen and (min-width: 1001px) {
+  body {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* reorganizing the product to always show horizontally */
+  .product {
+    width: 31%;
+    padding-left: 1%;
+    padding-right: 1%;
+    border: 1px solid black;
+  }
+
+  .first-product {
+    padding-left: 0;
+  }
+
+  .last-product {
+    padding-right: 0;
+  }
+
+  .details {
+    font-size: 12px;
+  }
+
+  a.project-link {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* reorganizing the header to be shown vertically */
+  header {
+    flex-direction: column;
+  }
+
+  .icon {
+    margin-top: 0;
+  }
+
+  .name,
+  .title {
+    text-align: center;
+  }
+
+  .name {
+    font-size: 1.5em;
+  }
+
+  .title {
+    font-size: 0.8em;
+  }
+
+  /* reorganizing the products to be shown vertically, also adjusting the order shown */
+  .product {
+    width: 100%;
+  }
+
+  .product:nth-child(1) {
+    order: -1;
+  }
+
+  .product:nth-child(2) {
+    order: -2;
+  }
+
+  .product-image {
+    width: 90%;
+    padding-left: 5%;
+  }
+
+  a.project-link {
+    font-size: 0.6em;
+  }
+
+  .details {
+    font-size: 10px;
+  }
+}

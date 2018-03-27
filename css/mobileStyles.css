@@ -1,0 +1,51 @@
+body {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  flex-direction: column;
+}
+
+.icon {
+  margin-top: 0;
+}
+
+.name,
+.title {
+  text-align: center;
+}
+
+.name {
+  font-size: 1.5em;
+}
+
+.title {
+  font-size: 0.8em;
+}
+
+.product {
+  width: 100%;
+}
+
+.product:nth-child(1) {
+  order: -1;
+}
+
+.product:nth-child(2) {
+  order: -2;
+}
+
+.product-image {
+  width: 90%;
+  padding-left: 5%;
+}
+
+a {
+  font-size: 0.6em;
+}
+
+.details {
+  font-size: 10px;
+}
